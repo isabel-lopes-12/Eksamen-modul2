@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #090446;
+    --accent: #D03C3A;
+    --secondary: #F6BC1D;
+    --text: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9fafb;
+    color: var(--text);
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 1rem 2.5rem;
+    border-bottom: 0.25rem solid var(--accent);
+    top: 0;
+}
+
+.logo {
+    color: white;
+    font-size: 1.875rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.career {
+    width: 80%;
+    margin: 3rem auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.career-img {
+    width: 400px;
+    border-radius: 1rem;
+}
+
+.career-content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.title-line {
+    width: 6rem;
+    height: 4px;
+    background: var(--accent);
+    margin: 1rem 0;
+}
+
+.dashboard {
+    width: 80%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: var(--accent)
+}
+
+#salaryChart,
+#growthChart,
+#educationChart {
+    height: 300px;
+}
+
+.education-item {
+    background: #eef2f7;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.about-contact {
+    background-color: white;
+    padding: 5rem 0;
+}
+
+.about-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-contact p {
+    max-width: 55rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.partners {
+    text-decoration: underline;
+}
+
+.contact-form {
+    max-width: 55rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    border: 0.125rem solid transparent;
+    font-family: var(--font);
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    margin-bottom: 0.4rem;
+    color: #444;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer-line.red {
+    height: 0.4rem;
+    background-color: var(--accent);
+}
+
+.footer-line.blue {
+    height: 0.4rem;
+    background-color: var(--primary);
+    margin-top: 0.3rem;
+}
+
+.footer-content {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 1.25rem;
+}
+
+.footer-logos img {
+    height: 3.5rem;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.reviews-section {
+    width: 80%;
+    max-width: 1500px;
+    margin: 3rem auto;
+}
+
+.reviews-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.review-card {
+    background: white;
+    padding: 1.5rem 1.8rem;
+    border-radius: 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.review-country {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.review-card p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.rating-bar {
+    background: #eee;
+    height: 8px;
+    border-radius: 10px;
+    margin: 0.5rem 0 0.3rem 0;
+}
+
+.rating-bar div {
+    height: 100%;
+    background: var(--secondary);
+    border-radius: 10px;
+}
+
+.review-score {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.reviews-filter button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.history-section {
+    width: 80%;
+    max-width: 1100px;
+    margin: 3rem auto;
+}
+
+.history-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.history-item {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.history-period {
+    font-weight: bold;
+    color: var(--accent);
+    margin-right: 0.4rem;
+}
+
+.history-text {
+    color: #444;
+}

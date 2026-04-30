@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPath - Career</title>
+    <link rel="stylesheet" href="stylesheetdetailedpage.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">EduPath 🏫</div>
+        <ul class="nav-links">
+        <li><a href="../main-page/mainpage.html">Home</a></li>
+        <li><a href="../main-page-with-filters/mainfilter.html">Filter educations</a></li>
+        <li><a href="../comparison-page/comparisonpage.html">Compare career paths</a></li>
+        <li><a href="../main-page/mainpage.html">About us</a></li>
+        </ul>
+    </nav>
+
+<section class="career">
+    <img id="careerImage" class="career-img" />
+    <div class="career-content">
+        <h1 id="careerTitle"></h1>
+        <div class="title-line"></div>
+        <p id="careerDescription"></p>
+    </div>
+</section>
+
+<!-- DASHBOARD -->
+<section class="dashboard">
+
+    <div class="card">
+        <h2>Anual salary</h2>
+        <div id="salaryChart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Employment growth trend</h2>
+        <div id="growthChart"></div>
+    </div>
+
+    <div class="card">
+        <h2>Education</h2>
+        <div id="educationList"></div>
+        <div id="educationChart"></div>
+    </div>
+
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="reviews-section">
+    <h1>Reviews: local and global</h1>
+    <br>
+    <br>
+    <div class="reviews-filter">
+    <button id="showAll" class="active">All</button>
+    <button id="showNorway">Norway</button>
+    <button id="showGlobal">Global</button>
+    </div>
+    <br>
+    <br>
+    <div id="reviewsContainer"></div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+
+<section class="history-section">
+    <h1>Historical events that have influenced the profession</h1>
+    <br>
+    <br>
+    <div id="historyContainer"></div>
+</section>
+
+<br>
+<br>
+<br>
+
+
+    <!-- About + Contact -->
+    <section class="about-contact">
+        <div class="container">
+        <div class="about">
+            <h2>About EduPath</h2>
+            <br>
+
+            <p>EduPath is a collaborative education platform developed in partnership with</p> <br>
+
+            <p class="partners">
+            Universitetet i Oslo,<br />
+            Norges teknisk-naturvitenskapelige universitet,<br />
+            Universitetet i Bergen, and<br />
+            Universitetet i Tromsø – Norges arktiske universitet.
+            </p> <br>
+
+            <p>
+            The platform provides structured, comparable information about academic degrees,
+            professional studies, and vocational pathways to support informed educational
+            and career decisions. Our goal is to improve transparency, accessibility,
+            and informed choice across Norwegian education.
+            </p>
+            <br>
+        </div>
+
+        <div class="contact">
+            <h2>Contact us!</h2>
+            <br>
+
+            <p>
+            Do you have ideas, input or suggestions for improvements for EduPath?
+            Fill out the form and contact us!
+            </p>
+
+            <br>
+
+            <form class="contact-form">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Write here..." />
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="Write here..." />
+            </div>
+
+            <button type="submit" class="form-button">Send message</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-lines">
+        <div class="footer-line red"></div>
+        <div class="footer-line blue"></div>
+        </div>
+
+        <div class="container footer-content">
+        <div class="footer-logos">
+            <img src="images/uio logo.png" alt="University of Oslo" />
+            <img src="images/ntnu logo png.png" alt="NTNU" />
+            <img src="images/uib logo.png" alt="University of Bergen" />
+            <img src="images/uit logo png.png" alt="UiT The Arctic University of Norway" />
+        </div>
+        </div>
+    </footer>
+
+
+<script src="scriptdetail.js"></script>
+</body>
+</html>
