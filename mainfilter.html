@@ -8,14 +8,14 @@
 </head> 
 <body>
 
-<!-- Standar navigasjonsbar -->
+<!-- Navbar -->
 <nav class="navbar">
     <div class="logo">EduPath 🏫</div>
     <ul class="nav-links">
-        <li><a href="../main-page/mainpage.html">Home</a></li>
-        <li><a href="../main-page-with-filters/mainfilter.html">Filter educations</a></li>
-        <li><a href="../comparison-page/comparisonpage.html">Compare career paths</a></li>
-        <li><a href="../main-page/mainpage.html">About us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mainfilter.html">Filter educations</a></li>
+        <li><a href="comparisonpage.html">Compare career paths</a></li>
+        <li><a href="detailedpage.html">About us</a></li>
     </ul>
 </nav>
 
@@ -36,7 +36,7 @@
     </div>
 </section>
 
-<!-- Toggle knapp -->
+<!-- Toggle -->
 <div class="button-container">
 <button class="view-button" id="toggleFilters">Show filters</button>
 </div>
@@ -86,75 +86,49 @@
     </div>
 </section>
 
-    <!-- About + Contact -->
-    <section class="about-contact">
-        <div class="container">
+<!-- About + Contact -->
+<section class="about-contact">
+    <div class="container">
         <div class="about">
             <h2>About EduPath</h2>
-            <br>
-
-            <p>EduPath is a collaborative education platform developed in partnership with</p> <br>
-
-            <p class="partners">
-            Universitetet i Oslo,<br />
-            Norges teknisk-naturvitenskapelige universitet,<br />
-            Universitetet i Bergen, and<br />
-            Universitetet i Tromsø – Norges arktiske universitet.
-            </p> <br>
-
-            <p>
-            The platform provides structured, comparable information about academic degrees,
-            professional studies, and vocational pathways to support informed educational
-            and career decisions. Our goal is to improve transparency, accessibility,
-            and informed choice across Norwegian education.
-            </p>
-            <br>
         </div>
 
         <div class="contact">
             <h2>Contact us!</h2>
-            <br>
-
-            <p>
-            Do you have ideas, input or suggestions for improvements for EduPath?
-            Fill out the form and contact us!
-            </p>
-
-            <br>
 
             <form class="contact-form">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" placeholder="Write here..." />
-            </div>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Write here..." />
+                </div>
 
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="Write here..." />
-            </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Write here..." />
+                </div>
 
-            <button type="submit" class="form-button">Send message</button>
+                <button type="submit" class="form-button">Send message</button>
             </form>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-lines">
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-lines">
         <div class="footer-line red"></div>
         <div class="footer-line blue"></div>
-        </div>
+    </div>
 
-        <div class="container footer-content">
+    <div class="container footer-content">
         <div class="footer-logos">
-            <img src="images copy/uio logo.png" alt="University of Oslo" />
-            <img src="images copy/ntnu logo png.png" alt="NTNU" />
-            <img src="images copy/uib logo.png" alt="University of Bergen" />
-            <img src="images copy/uit logo png.png" alt="UiT The Arctic University of Norway" />
+            <img src="uio logo.png" alt="University of Oslo" />
+            <img src="ntnu logo png.png" alt="NTNU" />
+            <img src="uib logo.png" alt="University of Bergen" />
+            <img src="uit logo png.png" alt="UiT" />
         </div>
-        </div>
-    </footer>
+    </div>
+</footer>
 
 <script src="scriptfilter.js"></script>
 </body>
