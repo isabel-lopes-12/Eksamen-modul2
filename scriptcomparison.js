@@ -102,7 +102,7 @@ function render() {
                 <p>${d.description?.summary || "No description"}</p>
 
                 <div class="card-button">
-                    <a href="../detailed-page/detailedpage.html?id=${c.id}">
+                    <a href="detailedpage.html?id=${c.id}">
                         View full details →
                     </a>
                 </div>
